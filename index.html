@@ -12,6 +12,7 @@
 	<link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
@@ -36,29 +37,53 @@
 	</header>
 
 	<main id="main" tabindex="-1">
-		<section id="about" class="section about" aria-labelledby="about-title">
+		<section id="about" class="section about curve-bottom" aria-labelledby="about-title">
 			<div class="container">
-				<div class="about-grid">
-					<img class="avatar" src="assets/images/profile-placeholder.svg" alt="프로필 사진">
-					<div>
-						<h1 id="about-title">안녕, 내 이름은 오세민이야.</h1>
-						<p class="lead">잘 부탁해.</p>
-						<ul class="social">
-							<li><a href="#" aria-label="GitHub 열기">GitHub</a></li>
-							<li><a href="#" aria-label="LinkedIn 열기">LinkedIn</a></li>
-							<li><a href="mailto:you@example.com" aria-label="이메일 보내기">Email</a></li>
+				<div class="hero hero-ref">
+					<div class="hero-headline">
+						<h1 id="about-title">
+							<span class="serif">안녕 오세민,</span>
+							<span class="sans">당신의 워크플로를 업그레이드합니다</span>
+						</h1>
+						<p class="lead">가볍게, 더 빠르게. 협업과 프로젝트를 한 곳에서.</p>
+						<div class="hero-cta">
+							<a class="button pill" href="#projects">프로젝트 보기</a>
+							<a class="button pill button-ghost" href="#contact">연락하기</a>
+						</div>
+					</div>
+					<div class="hero-strip">
+						<ul class="tilted-strip" aria-label="섬네일 스트립">
+							<li><img src="assets/images/hero.jpg" alt="히어로" loading="lazy"></li>
+							<li><img src="assets/images/project-1.jpg" alt="썸네일 1" loading="lazy"></li>
+							<li><img src="assets/images/project-2.jpg" alt="썸네일 2" loading="lazy"></li>
+							<li><img src="assets/images/project-3.jpg" alt="썸네일 3" loading="lazy"></li>
+							<li><img src="assets/images/profile.jpg" alt="프로필" loading="lazy"></li>
 						</ul>
 					</div>
+					<ul class="hero-features">
+						<li>
+							<h3>실시간 협업</h3>
+							<p>메시징·공유·라이브 업데이트로 팀이 함께.</p>
+						</li>
+						<li>
+							<h3>태스크/프로젝트</h3>
+							<p>보드, 리스트, 캘린더로 진행 상황을 한눈에.</p>
+						</li>
+						<li>
+							<h3>인사이트</h3>
+							<p>생산성과 워크로드를 데이터로 파악.</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
 
-		<section id="projects" class="section projects" aria-labelledby="projects-title">
+		<section id="projects" class="section projects curve-top curve-bottom" aria-labelledby="projects-title">
 			<div class="container">
 				<h2 id="projects-title">프로젝트</h2>
 				<div class="projects-grid">
 					<article class="card">
-						<img src="assets/images/thumb-placeholder.svg" alt="프로젝트 1 썸네일">
+						<img src="assets/images/project-1.jpg" alt="프로젝트 1 썸네일" loading="lazy">
 						<div class="card-body">
 							<h3>프로젝트 1</h3>
 							<p>간단한 설명이 들어갑니다. 사용 기술 또는 목표를 적어보세요.</p>
@@ -69,7 +94,7 @@
 						</div>
 					</article>
 					<article class="card">
-						<img src="assets/images/thumb-placeholder.svg" alt="프로젝트 2 썸네일">
+						<img src="assets/images/project-2.jpg" alt="프로젝트 2 썸네일" loading="lazy">
 						<div class="card-body">
 							<h3>프로젝트 2</h3>
 							<p>간단한 설명이 들어갑니다. 사용 기술 또는 목표를 적어보세요.</p>
@@ -80,7 +105,7 @@
 						</div>
 					</article>
 					<article class="card">
-						<img src="assets/images/thumb-placeholder.svg" alt="프로젝트 3 썸네일">
+						<img src="assets/images/project-3.jpg" alt="프로젝트 3 썸네일" loading="lazy">
 						<div class="card-body">
 							<h3>프로젝트 3</h3>
 							<p>간단한 설명이 들어갑니다. 사용 기술 또는 목표를 적어보세요.</p>
@@ -94,7 +119,7 @@
 			</div>
 		</section>
 
-		<section id="contact" class="section contact" aria-labelledby="contact-title">
+		<section id="contact" class="section contact curve-top" aria-labelledby="contact-title">
 			<div class="container">
 				<h2 id="contact-title">연락처</h2>
 				<form id="contact-form" novalidate>
